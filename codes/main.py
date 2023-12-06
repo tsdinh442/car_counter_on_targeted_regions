@@ -71,13 +71,13 @@ def draw_polygons(event, x, y, flags, params):
 
 ######### main ##############
 
-image_path = 'test-1.jpg'
+image_path = '../images/test-1.jpg'
 image = cv2.imread(image_path)
 image_copy = image.copy()
 cv2.imshow('polygons', image)
 cv2.setMouseCallback('polygons', draw_polygons)
 
-model = YOLO('models/11.pt') ##### replace your model here
+model = YOLO('../models/11.pt') ##### replace your model here
 
 while True:
     key = cv2.waitKey(1) & 0xFF
