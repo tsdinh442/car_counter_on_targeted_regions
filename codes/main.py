@@ -96,9 +96,11 @@ while True:
                 # detecting cars and start counting
                 count, centers, bboxes, scores = predict(model, polygon, image_path, thresh=0.7, iou=0.7)
 
+                # mark each car with a dot
                 for center in centers:
                     cv2.circle(image, center, radius=10, color=(0, 0, 255), thickness=-1)
 
+                # display the number of cars
                 cv2.putText(image, str(count) + 'cars', (polygon[0]), cv2.FONT_HERSHEY_SIMPLEX, 2, color=(0, 0, 0), thickness=5)
 
         cv2.imshow('polygons', image)
