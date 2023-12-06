@@ -10,4 +10,3 @@ pip install ultralytics
 
 [![Video](https://img.youtube.com/vi/I-gJ7d4bjKo/0.jpg)](https://www.youtube.com/watch?v=I-gJ7d4bjKo)
 
-
